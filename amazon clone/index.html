@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+
+        <!--Amazon Logo Section-->
+        <nav class="bg-[#0F1111] h-16 flex items-center px-4 text-white">
+            <a href="#" class="border border-transparent p-1 hover:border-white">
+                <img src="public/assets/amazon_logo.png" alt="Amazon Logo" class="w-24 h-10"/>
+            </a>
+
+            <!--Delivering Location Section-->
+            <div class="flex items-center ml-4 border border-transparent p-1 hover:border-white">
+                <i class="fa-solid fa-location-dot mr-2"></i>
+                <div>
+                    <p class="text-sm">Deliver to</p>
+                    <p class="text-sm font-bold">Sirsha 713385</p>
+                </div>
+            </div>
+
+            <!--Search Section-->
+            <div class="text-black flex items-center">
+                <select class="bg-[#E6E6E6] p-2 rounded-1-md h-10 border-r border-gray-300 px-2 rounded-lg rounded-r-none">
+                    <option>All</option>
+                </select>
+                    <input type="text" placeholder="Search Amazon.in" class="w-[500px] pl-2 text-base h-10 border border-gray-300 focus:outline-none"/>
+                    <div class="bg-orange-300 p-3 h-10 flex-items-center justify-center rounded-r-md cursor-pointer hover:bg-orange-400">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+            </div>
+
+            <!--Flag Section-->
+            <div class="flex border border-transparent p-1 hover:border-white">
+                <img src="public/assets/in-flag.jpg" class="w-9 h-7 pl-3 pt-3"/>
+                <select class="bg-transparent font-bold pt-2">
+                    <option>EN</option>
+                </select>
+            </div>
+
+            <!--About Me Section-->
+            <div class="flex flex-col border border-transparent p-1 hover:border-white">
+                <p class="text-xs pl-1 font-bold">Hello, Anjali</p>
+                <select class="bg-transparent font-bold -mt-1">
+                    <option>Accounts & Lists</option>
+                </select>
+            </div>
+
+            <!--Returns and Order Section-->
+            <div class="flex flex-col border border-transparent p-1 hover:border-white">
+                <p class="text-xs pl-1 font-bold">Returns</p>
+                <p class="font-bold -mt-1">&Orders</p>
+            </div>
+
+            <!--Cart Icon Section-->
+            <div class="flex border border-transparent p-1 hover:border-white pl-3 fa-2x">
+                <i class="fa-solid fa-cart-shopping pt-2"></i>
+                <p class="text-sm font-bold pl-2 pt-6">Cart</p>
+            </div>
+        </nav>
+
+        <!--Category Bar-->
+        <div class="bg-[#222F3D] h-10 flex items-center text-white text-sm pl-4">
+            <div class="flex items-center gap-1 border border-transparent p-1 hover:border-white">
+                <i class="fa-solid fa-bars fa-lg"></i>
+                <p class="font-bold">All</p>
+            </div>
+                <ul class="flex items-center">
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">Fresh</li>
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">MX Player</li>
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">Amazon Pay</li>
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">Today's Deals</li>
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">Keep Shopping for</li>
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">Bestsellers</li>
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">Buy Again</li>
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">Customer Service</li>
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">Mobiles</li>
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">Gift Cards</li>
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">Electronics</li>
+                    <li class="flex items-center gap-1 border border-transparent p-3 hover:border-white">Flights</li>
+                </ul>
+        </div>
+    </header>
+    <main class="bg-[#E6E6E6] pb-5">
+
+        <!--Banner Section-->
+        <div class="bg-[url('public/assets/Banner.jpg')] bg-cover h-80"></div>
+
+        <!--Cards Section 1st-->
+        <div class="grid grid-cols-4 grid-rows-2 gap-4 px-4">
+
+            <!--Card 1-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Starting ₹99 | Start your fitness journey</h2>
+                <img src="public/assets/Fitness Journey.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+
+            <!--Card 2-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 60% off | Car, bike parts & accessories</h2>
+                <img src="public/assets/Car Bike parts accessories.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+
+            <!--Card 3-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 75% off | Wall arts, painting, decor & ...</h2>
+                <img src="public/assets/Wall Art.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+
+            <!--Card 4-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 75% off | Party dresses from Small...</h2>
+                <img src="public/assets/Girls Dresses.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 5-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 55% off | Home Appliances...</h2>
+                <img src="public/assets/microwaves.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 6-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Top mobile accessories for your smartphone</h2>
+                <img src="public/assets/Cases and Covers.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 7-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Revamp your home in style</h2>
+                <img src="public/assets/Lightning Solutions.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 8-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Explore more from Small Businesses</h2>
+                <img src="public/assets/Fashion Accessories.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div> 
+            <!--Card 9-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Starting ₹149 | Headphones</h2>
+                <img src="public/assets/Boat.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 10-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Automotive essentials | Up to 60% off</h2>
+                <img src="public/assets/Helmets.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>  
+            <!--Card 11-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 60% off | Styles for women</h2>
+                <img src="public/assets/jewellery.jpg" alt="" class="my-3 h-40 w-70"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>   
+            <!--Card 12-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Min. 40% off | Fun toys that spark joy | Amazon...</h2>
+                <img src="public/assets/Toys.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 13-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Best Sellers in Beauty</h2>
+                <img src="public/assets/Beauty.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 14-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Best Sellers in Grocery & Gourmet Foods</h2>
+                <img src="public/assets/Grocery.jpg" alt="" class="my-3 h-40"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 15-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Explore International brands...</h2>
+                <img src="public/assets/International.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 16-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Best Sellers in Computers & Accessories</h2>
+                <img src="public/assets/Computer and accessories.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 17-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Best Sellers in Books...</h2>
+                <img src="public/assets/books.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 18-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Min. 50% off | Unique home finds | Amazon Brands & more</h2>
+                <img src="public/assets/unique home finds.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 19-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Best Sellers in Sports & Outdoors</h2>
+                <img src="public/assets/Sports.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <!--Card 20-->
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Minimum 50% off | Men's clothing</h2>
+                <img src="public/assets/men tshirt.jpg" alt="" class="my-3 h-80"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>       
+        </div>
+    </main>
+    <footer class="bg-white p-4">
+        <div class="bg-[#37475A] h-12 flex justify-center items-center text-white text-sm">
+            <p>Back to top</p>
+        </div>
+        <div class="bg-[#232F3E] h-[340px] text-[#DDDDDD] text-sm flex justify-evenly py-10">
+            <ul class="space-y-2.5">
+                <li class="font-bold text-base text-white">Get to know us</li>
+                <li>About Amazon</li>
+                <li>Careers</li>    
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+            </ul>
+            <ul class="space-y-2.5">
+                <li class="font-bold text-base text-white">Connect with Us</li>    
+                <li>Facebook</li>    
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+
+            <ul class="space-y-2.5">
+                 <li class="font-bold text-base text-white">Make Money with Us</li>
+                 <li>Sell on Amazon</li>  
+                 <li>Sell under Amazon Accelerator</li>
+                 <li>Protect and Build Your Brand</li>
+                 <li>Amazon Global Selling</li>
+                 <li>Supply to Amazon</li>
+                 <li>Become an Affiliate</li>
+                 <li>Fulfilment by Amazon</li>
+                 <li>Advertise Your Products</li>
+                 <li>Amazon Pay on Merchants</li>
+            </ul>
+            <ul class="space-y-2.5">
+                 <li class="font-bold text-base text-white">Let Us Help You</li>
+                 <li>Your Account</li>
+                 <li>Returns Centre</li> 
+                 <li>Recalls and Product Safety Alerts</li>   
+                 <li>100% Purchase Protection</li>   
+                 <li>Amazon App Download</li>
+                 <li>Help</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
